@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<head>
+<title style="color:blue;">C++ Storage Classes - Tutorial World</title> 
+</head>
+<body background="white" >
+<p ><a href="../home page.html" > <img src="../images/logo.png" alt="logo" width="12%" height="8%"> </a>
+<a href="../images/allinone.png" target="blank" ><img  align="right"  src="../images/allinone.png" alt="Courses" style="position:absolute; right:200px; "width="400px" height="85px"/></a> 
+</p>
+<table align="left"  width="100%">
+<style>
+table, th, td {
+border:1px lightgray;
+border-collapse:collapse;
+padding: 6px;
+border-spacing:10px;
+table-layout:fixed;}
+</style>
+<tr style="background-color:#F59139; align:middle; width:50%; "> 
+<style>
+th:hover{ background-color:lightblue;}
+th:active{background-color:white;}
+</style>
+<th ><a href="../home page.html" target="blank" style="text-decoration:none; color:black;" > Home  </a></th>
+<th> <a href="../home page.html" target="blank" style="text-decoration:none; color:black;" > C Language </a></th>
+<th> <a href="c++homepage.html" target="blank" style="text-decoration:none; color:black;" > C++ Language </a></th>
+<th> <a href="../home page.html" target="blank" style="text-decoration:none; color:black;" >Html Language</a></th>
+<th> <a href="../home page.html" target="blank" style="text-decoration:none; color:black;" >Python Language</a></th>
+<th> <a href="../home page.html" target="blank" style="text-decoration:none; color:black;" > SQL Language</a></th>
+<th> <a href="../home page.html" target="blank" style="text-decoration:none;  color:black; " > Coding Tools </a></th>
+<th> <a href="../home page.html" target="blank" style="text-decoration:none; color:black;" >Interview Questions </a></th>
+</tr>
+<tr >
+<th  colspan="8" align="center" style="background-color:#3B3B3B; color:white; font-family:tekton pro; font-size:200%;"><marquee behavior="scroll" direction="left"> Online Free Tutorials & Courses</marquee></th>
+</tr>
+<tr style="border:1px solid black; border-left:0px solid black;border-right:0px solid black; border-collapse:collapse; background-color:#ECECEC;"> 
+<td colspan="2" style="padding-top:0px;border-right:1px solid black;vertical-align:top;">
+<table width="100%" style="background-color:#7BFFC5; " >
+<style>
+ft{font-family:verdana; }
+ftt{font-family:geneva;font-size:120%;text-align:justify; }
+a {
+text-decoration:none;
+color:#010C08;}
+</style>
+
+<tr ><th id="abc" style="border-bottom:2px solid black;padding:10px;" ><a href="c++homepage.html" > C++ History</a></th></tr>
+<tr><th id="abc" style="border-bottom:2px solid black; padding:10px;"><a href="syntax.html"> Basic Syntax</a></th></tr>
+<tr><th id="abc" style="border-bottom:2px solid black;padding:10px;"> <a href="variable.html"> Variables</a></th></tr>
+<tr> <th id="abc" style="border-bottom:2px solid black; padding:10px;"> <a href="operators.html">Operators</a></th></tr>
+<tr><th id="abc" style="border-bottom:2px solid black; padding:10px;"> <a href="datatypes.html">Data Types </a></th></tr>
+<tr><th id="abc" style="border-bottom:2px solid black; padding:10px;"><a href="keywords.html" >  Keywords</a></th></tr>
+<tr><th id="abc" style="border-bottom:2px solid black; padding:10px;"><a href="storageclasses.html">Storage Classes</a></th></tr>
+<tr><th id="abc" style="border-bottom:2px solid black;padding:10px;"><a href="decision.html"> Decision Statements</a></th></tr>
+<tr><th id="abc" style="border-bottom:2px solid black; padding:10px;"><a href="functions.html">Functions</a></th></tr>
+<tr><th id="abc" style="border-bottom:2px solid black; padding:10px;"><a href="functions.html">Functions</a></th></tr>
+<tr><th id="abc" style="border-bottom:2px solid black; padding:10px;"><a href="arrays.html"> Arrays</a></th></tr>
+<tr><th id="abc" style="border-bottom:2px solid black; padding:10px;"><a href="strings.html"> Strings</a></th></tr>
+</table>
+</td>	
+
+<td colspan="4" style="background-color:#FFFFFF; border-right:1px solid black; table-layout:fixed;vertical-align:top;"> 
+<style>
+ul,p.beta{
+font-family:geneva;
+font-size:120%;
+text-align:justify;
+}
+h1,h2,h3.alpha{
+font-family:verdana;
+text-align:middle;}
+
+</style>
+<h1 title="C++ Tutorial" align="middle" ><font face="verdana" > C++ Storage Classes</font></h1>
+<p class="beta">A storage class defines the scope (visibility) and life-time of variables and/or functions within 
+a C++ Program. These specifiers precede the type that they modify. There are following storage classes, which can be used in a C++ Program</p>
+<ol type="1" style="font-family:calibri;">
+<li> auto</li><br>
+<li> register</li><br>
+<li> static</li><br>
+<li> extern</li><br>
+<li> mutable</li><br>
+</ol>
+<h3 class="alpha"> The auto Storage Class</h3>
+<p class="beta">The <b>auto</b> storage class is the default storage class for all local variables.</p>
+<textarea style="background-color:#C6C6C5;" rows="5" cols="78" >{
+   int mount;
+   auto int month;
+}
+ </textarea>
+ <h3 class="alpha">The register Storage Class</h3>
+ <p class="beta">The <b>register</b> storage class is used to define local variables that should be stored in a register instead of RAM. This means that the variable has 
+ a maximum size equal to the register size (usually one word) and can't have the unary '&' operator applied to it (as it does not have a memory location).
+</p>
+<textarea style="background-color:#C6C6C5;" rows="4" cols="78" >{
+
+   register int  miles;
+}
+ </textarea>
+<h3 class="alpha">The static Storage Class</h3>
+<p class="beta">The static storage class instructs the compiler to keep a local variable in existence during the life-time of the program instead 
+of creating and destroying it each time it comes into and goes out of scope. Therefore, making local variables static allows them to maintain their values between function calls.
+</p>
+<textarea style="background-color:#C6C6C5;" rows="25" cols="78" >
+#include <iostream>
+ 
+// Function declaration
+void func(void);
+ 
+static int count = 10; /* Global variable */
+ 
+main()
+{
+    while(count--)
+    {
+       func();
+    }
+    return 0;
+}
+// Function definition
+void func( void )
+{
+    static int i = 5; // local static variable
+    i++;
+    std::cout << "i is " << i ;
+    std::cout << " and count is " << count << std::endl;
+}
+ </textarea>
+<p class="beta">When the above code is compiled and executed, it produces the following result:</p>
+<textarea style="background-color:#C6C6C5;" rows="11" cols="78" >
+i is 6 and count is 9
+i is 7 and count is 8
+i is 8 and count is 7
+i is 9 and count is 6
+i is 10 and count is 5
+i is 11 and count is 4
+i is 12 and count is 3
+i is 13 and count is 2
+i is 14 and count is 1
+i is 15 and count is 0
+ </textarea>
+<h3 class="alpha">The extern Storage Class</h3>
+<p class="beta">The extern storage class is used to give a reference of a global variable that is visible to ALL the program files. 
+When you use 'extern' the variable cannot be initialized as all it does is point the variable name at a storage location that has been previously defined.
+
+<br><br>
+First File:main.cpp</p>
+
+<textarea style="background-color:#C6C6C5;" rows="11" cols="78" >
+
+#include <iostream>
+ 
+int count ;
+extern void write_extern();
+ 
+main()
+{
+   count = 5;
+   write_extern();
+} </textarea>
+
+<br>
+<p class="beta">Secondary file:support.cpp</p>
+<textarea style="background-color:#C6C6C5;" rows="9" cols="78" >
+ #include <iostream>
+ 
+extern int count;
+ 
+void write_extern(void)
+{
+   std::cout << "Count is " << count << std::endl;
+}
+</textarea>
+<p class="beta">Here, <i>extern </i>keyword is being used to declare count in another file.</p>
+
+</td>
+<td  colspan="2" style="border-right:0px solid black;background-color:#ECECEC; vertical-align:top;"> </td>
+</tr>
+</table>
+<hr>
+<br>
+<hr>
+<footer style="background:black;">
+<p style="color:white; padding-top:10px; "> &nbsp &nbsp &nbsp Copyright 2016 © <a href="../home page.html" style="color:white;" ><strong>Tutorial World.<strong></a>&nbsp All Rights Reserved.  </p>
+<p align="middle" style="color:white; " ><a href="../footer/contact.html" style="text-decoration:none;color:#DCFEFC;" target="blank">Contact Us</a> &nbsp | &nbsp
+<a href="../footer/disclaimer.html" style="text-decoration:none;color:#DCFEFC;" target="blank">Disclaimer</a>&nbsp | &nbsp
+<a href="../footer/termsofuse.html" style="text-decoration:none;color:#DCFEFC;" target="blank">Terms of Use</a>&nbsp | &nbsp
+<a href="../footer/privacy.html" style="text-decoration:none;color:#DCFEFC;" target="blank">Privacy Policy</a>
+ </p>  
+</footer>
+</body>
+</html>

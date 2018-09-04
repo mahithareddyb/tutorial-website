@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title> Register For Course- Tutorial World</title>
+</head>
+<body background="white" >
+<p ><a href="../home page.html" > <img src="../images/logo.png" alt="logo" width="15%" height="10%"> </a>
+<a href="../images/allinone.png" target="blank" ><img  align="right"  src="../images/allinone.png" alt="Courses" style="position:absolute; right:200px; "width="500px" height="100px"/></a> 
+</p>
+<table align="left" width="100%">
+<style>
+table, th, td {
+border:1px lightgray;
+border-collapse:collapse;
+padding: 8px;
+border-spacing:10px;}
+</style>
+<tr style="background-color:#F59139; align:middle; width:50%; "> 
+<style>
+th:hover{ background-color:lightblue;}
+th:active{background-color:white;}
+</style>
+<th ><a href="../home page.html" target="blank" style="text-decoration:none; color:black;" > Home  </a></th>
+<th> <a href="../home page.html" target="blank" style="text-decoration:none; color:black;" > C Language </a></th>
+<th> <a href="../data/c++homepage.html" target="blank" style="text-decoration:none; color:black;" > C++ Language </a></th>
+<th> <a href="../home page.html" target="blank" style="text-decoration:none; color:black;" >Html Language</a></th>
+<th> <a href="../home page.html" target="blank" style="text-decoration:none; color:black;" >Python Language</a></th>
+<th> <a href="../home page.html" target="blank" style="text-decoration:none; color:black;" > SQL Language</a></th>
+<th> <a href="../home page.html" target="blank" style="text-decoration:none;  color:black; " > Coding Tools </a></th>
+<th> <a href="../home page.html" target="blank" style="text-decoration:none; color:black;" >Interview Questions </a></th>
+</tr>
+<tr >
+<th  colspan="8" align="center" style="background-color:#3B3B3B; color:white; font-family:tekton pro;" > <marquee behavior="scroll" direction="left">Online Free Tutorials & Courses</marquee></th>
+</tr>
+
+<tr style="border:1px solid black; border-left:0px solid black;border-right:0px solid black; border-collapse:collapse;">
+<td style="border-right:1px solid black;background-color:#ECECEC; " colspan="2"></td>
+<td style="border-right:1px solid black; table-layout:fixed;" colspan="3" width="55%"  ><strong><font size="6" face="Verdana" >Registration form </font></strong> <br> <br>
+
+<p style="font-family:calibri;"> <b>Please fill the below form  </b> </p>
+<form id="f1" method=post action="register.html" name="f1" onsubmit="return validate(this)"> 
+<style>
+tab1{padding-left:4em;}
+tab2{padding-left:7em;}
+tab3{padding-left:10em;}
+
+</style>
+<font face="arial,san serif" >Name:</font><br>
+<input type="text" id="var1" name=firstname  value="" size="35" placeholder="Enter your name"> <br> <br>  
+
+<font face="arial,san serif">Age:</font><br>
+<input type="number" id="var2" name=location value="" size="35" placeholder="Enter your age" > <br>
+<br>
+
+
+<font face="arial,san serif">Mobile:</font><br>
+<input type="number" id="var4" name=phone size="35" value="" placeholder="Enter mobile number" > <br>
+<br>
+<font face="arial,san serif" >Email:</font><br>
+<input type="email" id="var3" name=mail size="35" value="" placeholder="Enter email">
+<br><br>
+
+<font face="arial,san serif">Location:</font><br>
+<input type="text" id="var5" name=location size="35" value="" placeholder="Enter location" > <br>
+<br>
+
+<font face="arial,san serif"> Language: </font><br>
+<input type="text" id="var6" name=subject value="" size="35" placeholder="Language to register" >
+<br> <br>
+<br>
+<input type="submit"  name=submit value="Register"><br>
+</form><br>
+
+<script>
+function validate(form)
+{
+a=document.getElementById("var1").value;
+b=document.getElementById("var2").value;
+c=document.getElementById("var3").value;
+d=document.getElementById("var4").value;
+e=document.getElementById("var5").value;
+f=document.getElementById("var6").value;
+
+if(a.length==0 || b.length==0 || c.length==0 || d.length==0 || e.length==0 || f.length==0)
+{
+alert("Kindly fill all the details ");
+form.focus();
+return false;
+}
+
+else 
+{
+alert("Form Submitted Succesfully");
+return true;
+}
+
+}
+
+</script>
+<p style="font-family:san serif; font-weight:bold;">
+<i> ** In case of Offline Application, Kindly send the application to the below Address</i><br>
+<br> Postal Address<br>
+<address> Jalandhar - Delhi G.T. Road,<br>	Phagwara, Punjab <br>(India) - 144411 </address><hr>
+
+
+</td>
+<td  style="border-right:0px solid black;background-color:#ECECEC; vertical-align:top; " colspan="3" ><br> <font size="4" style="font-family:san serif; font-size:96%;font-weight:bold;"> For General/ Topic Related Enquiry: </font>
+<br>
+<b>Phone:</b> +91-1842-404404<br>
+<b>Toll Free:</b> 1800 102 4431<br><br><br><br>
+<b>Fax:</b> +91-1824-506100 (Admin)<br>
+<b>Fax:</b> +91-1824-506111 (General)<br><br><br><br>
+<b>Email:</b> info@tutorialworld.com <br>
+<b>Email:</b> admin@tutorialworld.com<br><br><br><br> </td>
+</tr>
+
+
+</table>
+<p><hr></p>
+
+
+<footer style="background:black;">
+
+<p style="color:white; padding-top:10px; "> &nbsp &nbsp &nbsp Copyright 2016 © <a href="../home page.html" style="color:white;" ><strong>Tutorial World.<strong></a>&nbsp All Rights Reserved.  </p>
+<p align="middle" style="color:white; " ><a href="contact.html" style="text-decoration:none;color:#DCFEFC;" target="blank">Contact Us</a> &nbsp | &nbsp
+<a href="disclaimer.html" style="text-decoration:none;color:#DCFEFC;" target="blank">Disclaimer</a>&nbsp | &nbsp
+<a href="termsofuse.html" style="text-decoration:none;color:#DCFEFC;" target="blank">Terms of Use</a>&nbsp | &nbsp
+<a href="privacy.html" style="text-decoration:none;color:#DCFEFC;" target="blank">Privacy Policy</a>
+ </p>  
+</footer>
+</body>
+</html>

@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<head>
+<title style="color:blue;">C++ Basic Syntax - Tutorial World</title> 
+</head>
+<body background="white" >
+<p ><a href="../home page.html" > <img src="../images/logo.png" alt="logo" width="12%" height="8%"> </a>
+<a href="../images/allinone.png" target="blank" ><img  align="right"  src="../images/allinone.png" alt="Courses" style="position:absolute; right:200px; "width="400px" height="85px"/></a> 
+</p>
+<table align="left"  width="100%">
+<style>
+table, th, td {
+border:1px lightgray;
+border-collapse:collapse;
+padding: 6px;
+border-spacing:10px;
+table-layout:fixed;}
+</style>
+<tr style="background-color:#F59139; align:middle; width:50%; "> 
+<style>
+th:hover{ background-color:lightblue;}
+th:active{background-color:white;}
+</style>
+<th ><a href="../home page.html" target="blank" style="text-decoration:none; color:black;" > Home  </a></th>
+<th> <a href="../home page.html" target="blank" style="text-decoration:none; color:black;" > C Language </a></th>
+<th> <a href="c++homepage.html" target="blank" style="text-decoration:none; color:black;" > C++ Language </a></th>
+<th> <a href="../home page.html" target="blank" style="text-decoration:none; color:black;" >Html Language</a></th>
+<th> <a href="../home page.html" target="blank" style="text-decoration:none; color:black;" >Python Language</a></th>
+<th> <a href="../home page.html" target="blank" style="text-decoration:none; color:black;" > SQL Language</a></th>
+<th> <a href="../home page.html" target="blank" style="text-decoration:none;  color:black; " > Coding Tools </a></th>
+<th> <a href="../home page.html" target="blank" style="text-decoration:none; color:black;" >Interview Questions </a></th>
+</tr>
+<tr >
+<th  colspan="8" align="center" style="background-color:#3B3B3B; color:white; font-family:tekton pro; font-size:200%;"><marquee behavior="scroll" direction="left"> Online Free Tutorials & Courses</marquee></th>
+</tr>
+<tr style="border:1px solid black; border-left:0px solid black;border-right:0px solid black; border-collapse:collapse; background-color:#ECECEC;"> 
+<td colspan="2" style="padding-top:0px;border-right:1px solid black;vertical-align:top;">
+<table width="100%" style="background-color:#7BFFC5; " >
+<style>
+ft{font-family:verdana; }
+ftt{font-family:geneva;font-size:120%;text-align:justify; }
+a {
+text-decoration:none;
+color:#010C08;}
+</style>
+
+<tr ><th id="abc" style="border-bottom:2px solid black;padding:10px;" ><a href="c++homepage.html" > C++ History</a></th></tr>
+<tr><th id="abc" style="border-bottom:2px solid black; padding:10px;"><a href="syntax.html"> Basic Syntax</a></th></tr>
+<tr><th id="abc" style="border-bottom:2px solid black;padding:10px;"> <a href="variable.html"> Variables</a></th></tr>
+<tr> <th id="abc" style="border-bottom:2px solid black; padding:10px;"> <a href="operators.html">Operators</a></th></tr>
+<tr><th id="abc" style="border-bottom:2px solid black; padding:10px;"> <a href="datatypes.html">Data Types </a></th></tr>
+<tr><th id="abc" style="border-bottom:2px solid black; padding:10px;"><a href="keywords.html" >  Keywords</a></th></tr>
+<tr><th id="abc" style="border-bottom:2px solid black; padding:10px;"><a href="storageclasses.html">Storage Classes</a></th></tr>
+<tr><th id="abc" style="border-bottom:2px solid black;padding:10px;"><a href="decision.html"> Decision Statements</a></th></tr>
+<tr><th id="abc" style="border-bottom:2px solid black; padding:10px;"><a href="functions.html">Functions</a></th></tr>
+<tr><th id="abc" style="border-bottom:2px solid black; padding:10px;"><a href="functions.html">Functions</a></th></tr>
+<tr><th id="abc" style="border-bottom:2px solid black; padding:10px;"><a href="arrays.html"> Arrays</a></th></tr>
+<tr><th id="abc" style="border-bottom:2px solid black; padding:10px;"><a href="strings.html"> Strings</a></th></tr>
+</table>
+</td>	
+
+<td colspan="4" style="background-color:#FFFFFF; border-right:1px solid black; table-layout:fixed;vertical-align:top;"> 
+<style>
+ul,p.beta{
+font-family:geneva;
+font-size:120%;
+text-align:justify;
+}
+h1,h2,h3.alpha{
+font-family:verdana;
+text-align:middle;}
+
+</style>
+<h1 title="C++ Tutorial" align="middle" ><font face="verdana" > C++ Basic Syntax</font></h1>
+<p class="beta">When we consider a C++ program, it can be defined as a collection of objects that communicate via invoking each other's methods. Let us now briefly look into what do class, object, methods and Instance variables mean.
+ <ul shape="circle" >
+ 
+ <li ><strong>Object -</strong> Objects have states and behaviors. Example: A dog has states - color, name, breed as well as behaviors - wagging, barking, eating. An object is an instance of a class.</li>
+ 
+ <br><li > <strong>Class - </strong>A class can be defined as a template/blueprint that describes the behaviors/states that object of its type support.</li>
+ <br><li> <strong>Methods -</strong> A method is basically a behavior. A class can contain many methods. It is in methods where the logics are written, data is manipulated and all the actions are executed. </li>
+ <br> <li> <strong>Instance Variables -</strong> Each object has its unique set of instance variables. An object's state is created by the values assigned to these instance variables.</li>
+ </ul>
+ 
+ <h3 class="alpha"> C++ Program Structure:</h3>
+ <p class="beta">Let us look at a simple code that would print the words <i>Hello World</i>.</p>
+ <textarea style="background-color:#C6C6C5;" rows="12" cols="78" > 
+ #include <iostream>
+using namespace std;
+
+// main() is where program execution begins.
+
+int main()
+{
+   cout << "Hello World"; // prints Hello World
+   return 0;
+}
+ </textarea>
+ <p class="beta">Let us look various parts of the above program:
+ <ul class="beta">
+ 
+ <li> The C++ language defines several headers, 
+ which contain information that is either necessary or useful to your program. For this program, the header <b> iostream </b>is needed.</li><br>
+ <li> The line <b > int main() </b> is the main function where program execution begins. </li><br>
+ <li> The next line <b>cout << "This is my first C++ program.";</b> causes the message "This is my first C++ program" to be displayed on the screen.</li><br>
+ <li>The next line <b>return 0;</b> terminates main( )function and causes it to return the value 0 to the calling process.</li>
+ <br>
+ </ul>
+ </p>
+ 
+ </p>
+
+
+
+
+
+</td>
+<td  colspan="2" style="border-right:0px solid black;background-color:#ECECEC; vertical-align:top;"> </td>
+</tr>
+</table>
+<hr>
+<br>
+<hr>
+<footer style="background:black;">
+<p style="color:white; padding-top:10px; "> &nbsp &nbsp &nbsp Copyright 2016 © <a href="../home page.html" style="color:white;" ><strong>Tutorial World.<strong></a>&nbsp All Rights Reserved.  </p>
+<p align="middle" style="color:white; " ><a href="../footer/contact.html" style="text-decoration:none;color:#DCFEFC;" target="blank">Contact Us</a> &nbsp | &nbsp
+<a href="../footer/disclaimer.html" style="text-decoration:none;color:#DCFEFC;" target="blank">Disclaimer</a>&nbsp | &nbsp
+<a href="../footer/termsofuse.html" style="text-decoration:none;color:#DCFEFC;" target="blank">Terms of Use</a>&nbsp | &nbsp
+<a href="../footer/privacy.html" style="text-decoration:none;color:#DCFEFC;" target="blank">Privacy Policy</a>
+ </p>  
+</footer>
+</body>
+</html>
